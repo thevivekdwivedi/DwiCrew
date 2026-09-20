@@ -85,6 +85,15 @@ provider.
 |-------|-------|--------|
 | `""` (default) | kiro-cli | full support |
 | `kas` | kiro-agent (KAS) | runs chat; some surfaces still missing |
+| `opencode` | OpenCode | runs chat and tool approval; see below |
+| `goose` | goose | runs chat and tool approval; see below |
+
+`opencode` and `goose` are themselves multi-provider agent CLIs — each can be
+configured, on its own side, to run against Anthropic, OpenAI, Google Gemini, or a
+local Ollama model instead of kiro-cli's model. That is the supported route for
+choosing a non-kiro-cli model provider; see
+[model-providers.md](model-providers.md) for the setup steps. Kiro Crew still
+enforces its own tool-approval gate on both.
 
 **What works on `kas`:** normal chat — your configured agent, its prompt, its tool
 allowlist, and session resume. The context-usage percentage meter, compaction
