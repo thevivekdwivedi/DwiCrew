@@ -126,6 +126,7 @@
     "sigma": "3.0.2",
     "tailwind-merge": "^3.5.0",
     "unified": "^11.0.5",
+    "vgpu": "^0.5.0",
     "vis-data": "^8.0.3",
     "vis-network": "^10.0.2",
     "vscode-jsonrpc": "8.2.0",
